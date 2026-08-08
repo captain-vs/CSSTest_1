@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+
+    <style>
+
+         .box{
+            height: 70px;
+            width: 70px;  
+            margin:10px;
+        }
+
+        .box1{
+        
+            width: 70px;  
+            margin:10px;
+        }
+
+        .container1 {
+          background-color: grey;
+          display: flex;
+          flex-direction: row;
+        }
+
+        .container2 {
+          background-color: grey;
+          display: flex;
+           flex-direction: column;
+        }
+        .container3 {
+          background-color: grey;
+          display: flex;
+           flex-direction: row-reverse;
+        }
+        .container4 {
+          background-color: grey;
+          display: flex;
+           flex-direction: column-reverse;
+        }
+        .container5 {
+          background-color: grey;
+          display: flex;
+          justify-content: flex-start;
+        }
+        .container6 {
+          background-color: grey;
+          display: flex;
+          justify-content: flex-end;
+        }
+        .container7 {
+          background-color: grey;
+          display: flex;
+           justify-content: center;
+        }
+        .container8 {
+          background-color: grey;
+          display: flex;
+          justify-content: space-around;
+        }
+
+        .container9 {
+          background-color: grey;
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .container10 {
+          background-color: grey;
+          display: flex;
+          justify-content: space-evenly;
+        }
+       
+        .container11 {
+          background-color: grey;
+          display: flex;
+          align-items: start;
+        }
+
+        .container12 {
+          background-color: grey;
+          display: flex;
+          align-items: end;
+        }
+        
+        .container13 {
+          background-color: grey;
+          display: flex;
+          align-items: center;
+        }
+        .container14 {
+           
+          background-color: grey;
+          display: flex;
+          align-items: stretch;
+        }
+
+         .container15 {
+           
+          background-color: grey;
+          display: flex;
+          flex-wrap: nowrap;
+        }
+
+        .container16 {
+           
+          background-color: grey;
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .container17 {
+           
+          background-color: grey;
+          display: flex;
+          flex-wrap: wrap-reverse;
+        }
+
+
+    </style>
+</head>
+<body>
+
+
+    <h1>Flex Direction - Row</h1>
+    <div class="container1">
+        <div class="box" style="background-color: red;">Box 1</div>
+        <div class="box" style="background-color: blue;">Box 2</div>
+        <div class="box" style="background-color: green;">Box 3</div>
+    </div>
+
+    <h1>Flex Direction - Column</h1>
+    <div class="container2">
+        <div class="box" style="background-color: red;">Box 1</div>
+        <div class="box" style="background-color: blue;">Box 2</div>
+        <div class="box" style="background-color: green;">Box 3</div>
+    </div>
+
+    <h1>Flex Direction - Row Reverse</h1>
+    <div class="container3">
+        <div class="box" style="background-color: red;">Box 1</div>
+        <div class="box" style="background-color: blue;">Box 2</div>
+        <div class="box" style="background-color: green;">Box 3</div>
+    </div>
+
+    <h1>Flex Direction - Column Reverse</h1>
+    <div class="container4">
+        <div class="box" style="background-color: red;">Box 1</div>
+        <div class="box" style="background-color: blue;">Box 2</div>
+        <div class="box" style="background-color: green;">Box 3</div>
+    </div>
+    
+    <h1>Justify Content - Flex-start</h1>
+    <div class="container5">
+        <div class="box" style="background-color: red;">Box 1</div>
+        <div class="box" style="background-color: blue;">Box 2</div>
+        <div class="box" style="background-color: green;">Box 3</div>
+    </div>
+    
+    <h1>Justify Content - Flex-end</h1>
+    <div class="container6">
+        <div class="box" style="background-color: red;">Box 1</div>
+        <div class="box" style="background-color: blue;">Box 2</div>
+        <div class="box" style="background-color: green;">Box 3</div>
+    </div>
+    
+    <h1>Justify Content - center</h1>
+    <div class="container7">
+        <div class="box" style="background-color: red;">Box 1</div>
+        <div class="box" style="background-color: blue;">Box 2</div>
+        <div class="box" style="background-color: green;">Box 3</div>
+    </div>
+    
+    <h1>Justify Content - Space-around</h1>
+    <div class="container8">
+        <div class="box" style="background-color: red;">Box 1</div>
+        <div class="box" style="background-color: blue;">Box 2</div>
+        <div class="box" style="background-color: green;">Box 3</div>
+    </div>
+    
+    <h1>Justify Content - Space-between</h1>
+    <div class="container9">
+        <div class="box" style="background-color: red;">Box 1</div>
+        <div class="box" style="background-color: blue;">Box 2</div>
+        <div class="box" style="background-color: green;">Box 3</div>
+    </div>
+    
+    <h1>Justify Content - space-evenly</h1>
+    <div class="container10">
+        <div class="box" style="background-color: red;">Box 1</div>
+        <div class="box" style="background-color: blue;">Box 2</div>
+        <div class="box" style="background-color: green;">Box 3</div>
+    </div>
+    
+    <h1> align-content - start</h1>
+    <div class="container11" style="height: 200px;">
+        <div class="box1" style="background-color: red; height: 70px;">Box 1</div>
+        <div class="box1" style="background-color: blue; height: 70px;">Box 2</div>
+        <div class="box1" style="background-color: green; height: 70px;">Box 3</div>
+    </div>
+    
+    <h1> align-content - end</h1>
+    <div class="container12" style="height: 200px;">
+        <div class="box1" style="background-color: red; height: 70px;">Box 1</div>
+        <div class="box1" style="background-color: blue; height: 70px;">Box 2</div>
+        <div class="box1" style="background-color: green; height: 70px;">Box 3</div>
+    </div>
+    
+    <h1> align-content - center</h1>
+    <div class="container13" style="height: 200px;">
+        <div class="box1" style="background-color: red; height: 70px;">Box 1</div>
+        <div class="box1" style="background-color: blue; height: 70px;">Box 2</div>
+        <div class="box1" style="background-color: green; height: 70px;">Box 3</div>
+    </div>
+    
+    <h1> align-content - stretch</h1>
+    <div class="container14" style="height: 200px;">
+        <div class="box1" style="background-color: red;">Box 1</div>
+        <div class="box1" style="background-color: blue;">Box 2</div>
+        <div class="box1" style="background-color: green;">Box 3</div>
+    </div>
+    
+    <h1>Flex NoWrap</h1>
+    <div class="container15">
+        <div class="box" style="background-color: red;">Box 1</div>
+        <div class="box" style="background-color: blue;">Box 2</div>
+        <div class="box" style="background-color: green;">Box 3</div>
+         <div class="box" style="background-color: red;">Box 1</div>
+        <div class="box" style="background-color: blue;">Box 2</div>
+        <div class="box" style="background-color: green;">Box 3</div>
+         <div class="box" style="background-color: red;">Box 1</div>
+        <div class="box" style="background-color: blue;">Box 2</div>
+        <div class="box" style="background-color: green;">Box 3</div>
+         <div class="box" style="background-color: red;">Box 1</div>
+        <div class="box" style="background-color: blue;">Box 2</div>
+        <div class="box" style="background-color: green;">Box 3</div>
+         <div class="box" style="background-color: red;">Box 1</div>
+        <div class="box" style="background-color: blue;">Box 2</div>
+        <div class="box" style="background-color: green;">Box 3</div>
+         <div class="box" style="background-color: red;">Box 1</div>
+        <div class="box" style="background-color: blue;">Box 2</div>
+        <div class="box" style="background-color: green;">Box 3</div>
+         <div class="box" style="background-color: red;">Box 1</div>
+        <div class="box" style="background-color: blue;">Box 2</div>
+        <div class="box" style="background-color: green;">Box 3</div>
+         <div class="box" style="background-color: red;">Box 1</div>
+        <div class="box" style="background-color: blue;">Box 2</div>
+        <div class="box" style="background-color: green;">Box 3</div>
+    </div>
+    
+    <h1>Flex Wrap</h1>
+    <div class="container16">
+        <div class="box" style="background-color: red;">Box 1</div>
+        <div class="box" style="background-color: blue;">Box 2</div>
+        <div class="box" style="background-color: green;">Box 3</div>
+         <div class="box" style="background-color: red;">Box 1</div>
+        <div class="box" style="background-color: blue;">Box 2</div>
+        <div class="box" style="background-color: green;">Box 3</div>
+         <div class="box" style="background-color: red;">Box 1</div>
+        <div class="box" style="background-color: blue;">Box 2</div>
+        <div class="box" style="background-color: green;">Box 3</div>
+         <div class="box" style="background-color: red;">Box 1</div>
+        <div class="box" style="background-color: blue;">Box 2</div>
+        <div class="box" style="background-color: green;">Box 3</div>
+         <div class="box" style="background-color: red;">Box 1</div>
+        <div class="box" style="background-color: blue;">Box 2</div>
+        <div class="box" style="background-color: green;">Box 3</div>
+         <div class="box" style="background-color: red;">Box 1</div>
+        <div class="box" style="background-color: blue;">Box 2</div>
+        <div class="box" style="background-color: green;">Box 3</div>
+         <div class="box" style="background-color: red;">Box 1</div>
+        <div class="box" style="background-color: blue;">Box 2</div>
+        <div class="box" style="background-color: green;">Box 3</div>
+         <div class="box" style="background-color: red;">Box 1</div>
+        <div class="box" style="background-color: blue;">Box 2</div>
+        <div class="box" style="background-color: green;">Box 3</div>
+    </div>
+    
+    <h1>Flex Wrap-reverse</h1>
+    <div class="container17">
+        <div class="box" style="background-color: red;">Box 1</div>
+        <div class="box" style="background-color: blue;">Box 2</div>
+        <div class="box" style="background-color: green;">Box 3</div>
+         <div class="box" style="background-color: red;">Box 1</div>
+        <div class="box" style="background-color: blue;">Box 2</div>
+        <div class="box" style="background-color: green;">Box 3</div>
+         <div class="box" style="background-color: red;">Box 1</div>
+        <div class="box" style="background-color: blue;">Box 2</div>
+        <div class="box" style="background-color: green;">Box 3</div>
+         <div class="box" style="background-color: red;">Box 1</div>
+        <div class="box" style="background-color: blue;">Box 2</div>
+        <div class="box" style="background-color: green;">Box 3</div>
+         <div class="box" style="background-color: red;">Box 1</div>
+        <div class="box" style="background-color: blue;">Box 2</div>
+        <div class="box" style="background-color: green;">Box 3</div>
+         <div class="box" style="background-color: red;">Box 1</div>
+        <div class="box" style="background-color: blue;">Box 2</div>
+        <div class="box" style="background-color: green;">Box 3</div>
+         <div class="box" style="background-color: red;">Box 1</div>
+        <div class="box" style="background-color: blue;">Box 2</div>
+        <div class="box" style="background-color: green;">Box 3</div>
+         <div class="box" style="background-color: red;">Box 1</div>
+        <div class="box" style="background-color: blue;">Box 2</div>
+        <div class="box" style="background-color: green;">Box 3</div>
+    </div>
+    
+
+
+    
+</body>
+</html>
